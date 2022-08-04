@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(233, 232, 232);
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.et-page{
+    background-color: rgb(233, 232, 232);
+    height: 100vh;
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.et-card{
+    width: 30%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* 
+.your-balance{
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.balance{
+
+} */
+
+.et-stats-card{
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding:10px;
+    border-radius: 5px;
+    /* box-shadow: 5px 10px 25x 50px rgb(116, 100, 100); */
+    box-shadow: 1px 2px 1px 1px rgb(190, 184, 184);
+}
+.et-stats-income{
+    width: 50%;
+    text-align: center;
+    font-weight:bold;
+}
+.et-stats-expense{
+    width: 50%;
+    text-align: center;
+    border-left: 2px solid rgb(167, 159, 159);
+    font-weight:bold;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 99%;
+    padding: 5px;
+    padding-right: 0;
+    border: 1px solid rgb(185, 182, 182);
+    background-color: rgb(240, 240, 240);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus{
+    outline: 1px solid rgb(189, 182, 182);;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: rgb(117, 35, 194);
+    cursor: pointer;
+}
+
+.transaction{
+    width: 90%;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 15px;
+    box-shadow: 0px 1px 1px 1px rgb(190, 184, 184);
+    margin-bottom: 10px;
+    
+}
+.trans-item{
+    width: 50%;
+    text-align: left;
+}
+.trans-amt{
+    width: 50%;
+    text-align: right;
+}
+.pos{
+    border-right: 10px solid green;
+}
+
+.neg{
+    border-right: 10px solid red;
+}
+
+#delete{
+    display:none;
+    height: 38px;
+    width: 20px;
+    align-items: center;
+    background-color: rgb(31, 26, 26);
+}
+.wrapper:hover #delete{
+        display: flex;
+}
+
+@media screen and (max-width:700px){
+    .et-card{
+        width: 80%;
+        margin: auto;
+        margin-top: 5px;
+        padding: 10px;
+        
+    }   
 }
